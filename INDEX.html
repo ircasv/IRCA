@@ -1,276 +1,121 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRCA ZACATECOLUCA
-    </title>
+    <title>Carousel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  </head>
+  <body>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+      .carousel-caption h3 {
+          font-size: 24px;
+          color: #00ff22;
+      }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-            text-align: left;
-            border-bottom: 5px solid #111; /* Agregado: Borde de color para los enlaces de navegación */
-        }
-
-        header img {
-            max-height: 50px; /* Ajusta la altura de la imagen según tus necesidades */
-            margin-right: 1em;
-            margin-right: 1500px;
-        }
-
-        .header-button {
-            background-color: #F90F10; /* Rojo */
-            color: white;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            margin-right: 1em;
-            border-radius: 80px;
-            text-align: center;
-            max-width: 200px;
-        }
-
-        
-
-        .header-button:hover .dropdown {
-            display: block;
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            background-color: #33333300;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            z-index: 1;
-            text-align: start;
-        }
-
-        .header-botondiplomados {
-            background-color: #F90F10; /* Rojo */
-            color: white;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            margin-right: 1em;
-            border-radius: 80px;
-        }
-
-        .header-botondiplomados:hover .dropdown {
-            display: block;
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            background-color: #33333300;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            z-index: 1;
-            text-align: start;
-
-        }
-
-        .diplo-button {
-            background-color: #d39625; /* Verde */
-            color: white;
-            padding: 1em 2em;
-            text-decoration: 5px underline white;
-            border-radius: 80px;
-            text-align: center;
-        }
-
-        .curs-button {background-color: #d39625; /* Verde */
-            color: white;
-            padding: 1em 1em;
-            text-decoration: none;
-            border-radius: 80px;
-            text-align: center;
-        }
-
-        .lengua-button {
-            background-color: #d39625; /* Verde */
-            color: white;
-            padding: 1em 1em;
-            text-decoration: none;
-            border-radius: 80px;
-            text-align: center;
-        }
-
-
-        .yellow-button {
-            background-color: #d39625; /* Verde */
-            color: white;
-            padding: 1em 1em;
-            text-decoration: none;
-            border-radius: 80px;
-            text-align: center;
-        }
-
-        .dropdown a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 0.5em 1em;
-        }
-
-        
-        
-        .section1 {
-            background-color: #F90F10; /* Rojo */
-            color: white;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            margin-right: 1em;
-            border-radius: 80px;
-            text-align: center;
-            max-width: 200px;
-        }
-
-        body {
-            background-color: #222;
-        }
-
-   
-        section {
-            padding: 2em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: normal;
-        }
-
-        .product {
-            border: 1px solid #444;
-            background-color: #333;
-            color: #ffff;
-            border-radius: 20pt;
-            padding: 1em;
-            margin: 1em;
-            text-align: justify;
-            width: calc(22% - 2em); /* Calcula el ancho para tres productos por fila */
-        }
-
-        .product img {
-            max-width: 50%;
-            height: auto;
-            margin-bottom: 1em;
-            border-radius: 20pt;
-        }
-
-        .whatsapp-button {
-            background-color: #084184;
-            color: white;
-            padding: 1em;
-            text-align: justify;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            border-radius: 80px;
-            margin-top: 1em;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: static;
-        }
-    </style>
+      .carousel-caption p {
+          font-size: 18px; 
+          color: #010116;
+        } 
+  </style>
 </head>
 <body>
-    <header>
-       
-        <img src="file:///C:/Users/PC/Downloads/IRCA%20LOGO.png" />
-        <div class="header-buttons">
-            <div class="header-button">
-                ¿QUIENES SOMOS?
-                <div class="dropdown">
-                    <a href="#" class="yellow-button">EL I.R.C.A ES UNA INSTITUCIÓN PRIVADA DE FORMACIÓN PRÁCTICA. CON MÁS DE 30 AÑOS DE EXPERIENCIA EN LA FORMACIÓN DE PROFESIONALES ESPECIALIZADOS.</a>
-                  
-                </div>
-            
-            </div>
-        </div>
+  
+  <div class="container">
+    <br>
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="8" class="active"></li>
+        <li data-target="#theCarousel" data-slide-to="1"></li>
+        <li data-target="#theCarousel" data-slide-to="2"></li>
+        <li data-target="#theCarousel" data-slide-to="3"></li>
+        <li data-target="#theCarousel" data-slide-to="4"></li>
+        <li data-target="#theCarousel" data-slide-to="5"></li>
+        <li data-target="#theCarousel" data-slide-to="6"></li>
+        <li data-target="#theCarousel" data-slide-to="7"></li>
+        <li data-target="#theCarousel" data-slide-to="8"></li>
         
-         
-    </header>
-
-   
-
-    <nav>
-        
-    </nav>
-
-    <section>
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/SEC.jpg" >
-            <h2>SECRETARIADO</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 1 AÑO </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
-
+      </ol>
+  
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="file:///C:/Users/PC-2/Desktop/GERSON%20RAMOS/MI%20PRIMER%20WEB/BANNER%202%20WEB.jpg" alt="Ilustracion"width="1200" height="424"> 
+           <div class="carousel-caption d-none d-md-block">
+      <h3>La tecnología hace posible lo que una vez fue imposible</h3>
+      <p>DIOLOMADO</p>
+    </div>
         </div>
-
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/DIS%20G.jpg" alt="GASTRONOMIA">
-            <h2>GASTRONOMIA</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 2 AÑO </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+  
+      
+        <div class="item">
+          <img src="file:///C:/Users/PC-2/Desktop/GERSON%20RAMOS/MI%20PRIMER%20WEB/BANNER%201%20WEB.jpg" alt="fotografia" width="1200" height="424"> 
+           <div class="carousel-caption d-none d-md-block">
+      <h3> Xataka Fotografía</h3>
+      <p>Concurso</p>
+    </div>
         </div>
-
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/SEC.jpg" alt="SECRETARIADO">
-            <h2>INFORMATICA</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 6 MESES </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+  
+       <div class="item">
+          <img src="https://www.diariodesevilla.es/2020/06/03/pds/Playa-Salinas-Almeria_1470463148_122223454_667x375.jpg" alt="pintura" width="1000" height="424">
+           <div class="carousel-caption d-none d-md-block">
+      <h3>DoArt Pintura</h3>
+      <p>Curso</p>
+    </div>
         </div>
-
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/DIS%20G.jpg" alt="GASTRONOMIA">
-            <h2>MECANICA DE AUTO</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 2 AÑO </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+         <div class="item">
+          <img src="https://www.lavanguardia.com/andro4all/hero/2023/07/redmi-watch-3-active.1689861716.983.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="diseno" width="900" height="424"> 
+           <div class="carousel-caption d-none d-md-block">
+      <h3>Gastronomia Profesional</h3>
+      <p>DIPLOMADO</p>
+    </div>
         </div>
-
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/SEC.jpg" alt="SECRETARIADO">
-            <h2>MECANICA DE MOTOS</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 1 AÑO </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
-        </div>
-
-        <div class="product">
-            <img src="file:///C:/Users/PC/Downloads/DIS%20G.jpg" alt="GASTRONOMIA">
-            <h2>DECORACION CON GLOBOS</h2>
-            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
-            <p>DURACION: 6 MESES </p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
-        </div>
-         <!-- Botón fijo elíptico para WhatsApp con imagen -->
-<a href="https://wa.me/77401302" target="_blank" style="position: fixed; bottom: 50px; right: 10px; width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; background-image: url('https://icones.pro/wp-content/uploads/2021/02/icone-du-logo-whatsapp-vert.png'); background-size: cover;"></a>
-<!-- Fin del botón fijo elíptico para WhatsApp con imagen -->
-
-
-        <!-- Puedes añadir más productos aquí -->
-    </section>
-
-    <footer>
-        <p>&copy; TE CAPACITAMOS PARA TRABAJAR</p>
-    </footer>
-</body>
-</html>
+        <div class="item">
+            <img src="https://www.celag.org/wp-content/uploads/2018/05/internet-de-las-cosasDEF.jpg" alt="diseno" width="1000" height="424"> 
+             <div class="carousel-caption d-none d-md-block">
+        <h3>UX UI Diseño Gráfico</h3>
+        <p>Curso</p>
+      </div>
+          </div>
+          <div class="item">
+            <img src="https://www.randstad.es/wp-content/uploads/2016/08/tecnologia-futuro-y-nuevos-empleos-880.jpg" alt="diseno" width="600" height="424"> 
+             <div class="carousel-caption d-none d-md-block">
+        <h3>UX UI Diseño Gráfico</h3>
+        <p>Curso</p>
+      </div>
+          </div>
+          <div class="item">
+            <img src="file://daniel/Users/Public/BANNER%201%20WEB.jpg" alt="diseno" width="1500" height="700"> 
+             <div class="carousel-caption d-none d-md-block">
+        <h3>UX UI Diseño Gráfico</h3>
+        <p>Curso</p>
+      </div>
+          </div>
+          <div class="item">
+            <img src="https://i0.wp.com/www.asociaciondefotografiaf22.com/wp-content/uploads/2016/04/RecortarPS.jpg?ssl=1" alt="diseno" width="700" height="400"> 
+             <div class="carousel-caption d-none d-md-block">
+        <h3>UX UI Diseño Gráfico</h3>
+        <p>Curso</p>
+      </div>
+          </div>
+          <div class="item">
+            <img src="https://images.ctfassets.net/h6goo9gw1hh6/3XxJnwhj1x1P4FlzCybOUR/1e25cfc329770a3f6a16f87697ffe4f9/high-res-TW.png" alt="diseno" width="600" height="424"> 
+             <div class="carousel-caption d-none d-md-block">
+        <h3>UX UI Diseño Gráfico</h3>
+        <p>Curso</p>
+      </div>
+          </div>
+  
+  
+      <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">anterior</span>
+      </a>
+      <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">siguiente</span>
+      </a>
+    </div>
 
 
